@@ -37,7 +37,7 @@ if __name__ == '__main__':
             fig.add_trace(go.Scatter
                 (
                     x=[index - 1, index, index + 1],
-                    y=[head_and_shoulders_df.loc[index - 1]['Close'], head_and_shoulders_df.loc[index]['Close'], head_and_shoulders_df.loc[index+1]['Close']],
+                    y=[head_and_shoulders_df.loc[index - 1]['High'], head_and_shoulders_df.loc[index]['High'], head_and_shoulders_df.loc[index+1]['High']],
                     mode='lines+markers', 
                     name='Head and Shoulder',
                     line=dict(color='red')
